@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lvtlabs.healthchrono" xmlns:tools="http://schemas.android.com/tools">
+  <!-- Internet is required for API calls -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <!-- Camera & storage if you use those features -->
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:replace="android:maxSdkVersion"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:replace="android:maxSdkVersion"/>
+  <!-- Biometric if needed elsewhere -->
+  <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+  <!-- Needed to read step counts -->
+  <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+  <!-- Needed if you want other sensor data (heart rate, etc.) -->
+  <uses-permission android:name="android.permission.BODY_SENSORS"/>
+  <!-- Location perms if you ever need them -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- Let Android know we intend to talk to Health Connect -->
+  <queries>
+    <package android:name="com.google.android.apps.healthdata"/>
+    <intent>
+      <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"/>
+    </intent>
+  </queries>
+  <application
+    android:label="Health Chrono"
+    tools:replace="android:label"
+    android:icon="@mipmap/ic_launcher"
+    android:requestLegacyExternalStorage="true"
+  >
+    <!-- Your Flutter activity -->
+    <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop" android:theme="@style/LaunchTheme" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode" android:hardwareAccelerated="true" android:windowSoftInputMode="adjustResize">
+      <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/NormalTheme"/>
+      <meta-data android:name="io.flutter.embedding.android.SplashScreenDrawable" android:resource="@drawable/launch_background"/>
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <!-- If you still need deep linking, scope it narrowly.
+                 Otherwise you can remove this intent-filter block. -->
+      <meta-data android:name="flutter_deeplinking_enabled" android:value="true"/>
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="healthchrono" android:host="app.com"/>
+      </intent-filter>
+    </activity>
+    <!-- Flutter embedding metadata -->
+    <meta-data android:name="flutterEmbedding" android:value="2"/>
+  </application>
+</manifest>
