@@ -2,3 +2,17 @@
 .flutter-plugins-dependencies
 ios/Flutter/ephemeral/
 pubspec.lock
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/docs/deployment/android#reference-the-keystore-from-the-app
+key.properties
+.dart_tool
+.vscode
+android/build.gradle
