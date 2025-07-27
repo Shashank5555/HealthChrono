@@ -10,45 +10,48 @@ import 'package:flutter/material.dart';
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
 // Give me a custom action which gives me the number of steps taken
+import 'dart:io';
 import 'package:health/health.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-/// Returns today’s total step count, or 0 if permissions are denied, or -1 if
-/// Health Connect / HealthKit isn’t available.
 Future<int> getDailyStepCount() async {
-  try {
-    // 1️⃣ Activity recognition (required for steps on Android)
-    if (await Permission.activityRecognition.request().isDenied) {
-      print('⛔️ Activity Recognition permission denied');
-      return 0;
+  final health = Health();
+
+  // Runtime perm
+  if (!(await Permission.activityRecognition.request()).isGranted) return 0;
+
+  const types = [HealthDataType.STEPS];
+  const perms = [HealthDataAccess.READ];
+
+  final already =
+      await health.hasPermissions(types, permissions: perms) ?? false;
+  bool granted =
+      already || await health.requestAuthorization(types, permissions: perms);
+  if (!granted) return 0;
+
+  // >>> History grant (only if you need >30 days) <<<
+  if (Platform.isAndroid) {
+    final hist = await health.isHealthDataHistoryAuthorized();
+    if (!hist) {
+      await health.requestHealthDataHistoryAuthorization();
     }
-
-    // 2️⃣ Create plugin instance
-    final health = Health();
-
-    // 3️⃣ Specify STEPS and read-only access
-    const types = [HealthDataType.STEPS];
-    const permissions = [HealthDataAccess.READ];
-
-    // 4️⃣ Request authorization
-    final granted =
-        await health.requestAuthorization(types, permissions: permissions);
-    if (!granted) {
-      print('⛔️ Health authorization denied');
-      return 0;
-    }
-
-    // 5️⃣ Time window: midnight → now
-    final now = DateTime.now();
-    final startOfDay = DateTime(now.year, now.month, now.day);
-
-    // 6️⃣ Fetch total steps
-    final totalSteps =
-        await health.getTotalStepsInInterval(startOfDay, now) ?? 0;
-    print('✅ Steps today: $totalSteps');
-    return totalSteps;
-  } catch (e, st) {
-    print('❌ Error fetching step count: $e\n$st');
-    return 0;
   }
+
+  final start =
+      DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
+  final end = start.add(const Duration(days: 1));
+  final total = await health.getTotalStepsInInterval(start, end);
+  if (total != null) return total;
+
+  final pts = await health.getHealthDataFromTypes(
+    startTime: start,
+    endTime: end,
+    types: types,
+  );
+  int manual = 0;
+  for (final p in pts) {
+    final v = p.value;
+    if (v is NumericHealthValue) manual += v.numericValue.toInt();
+  }
+  return manual;
 }

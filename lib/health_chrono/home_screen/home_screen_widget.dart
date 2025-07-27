@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/health_chrono/no_data_available/no_data_available_widget.dart';
 import '/custom_code/actions/index.dart' as actions;
+import '/custom_code/widgets/index.dart' as custom_widgets;
 import '/index.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -1904,6 +1905,443 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             14.0),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            12.0),
+                                                    border: Border.all(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .alternate,
+                                                      width: 2.0,
+                                                    ),
+                                                  ),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                16.0,
+                                                                16.0,
+                                                                16.0,
+                                                                16.0),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.min,
+                                                      children: [
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '6ydk8czm' /* Date Range */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .headlineSmall
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .headlineSmallFamily,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    useGoogleFonts:
+                                                                        !FlutterFlowTheme.of(context)
+                                                                            .headlineSmallIsCustom,
+                                                                  ),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              width: 12.0)),
+                                                        ),
+                                                        Container(
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        16.0),
+                                                            border: Border.all(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .alternate,
+                                                            ),
+                                                          ),
+                                                          child: Column(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsets
+                                                                        .all(
+                                                                            16.0),
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Flexible(
+                                                                      flex: 1,
+                                                                      child:
+                                                                          Container(
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Column(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.min,
+                                                                          crossAxisAlignment:
+                                                                              CrossAxisAlignment.start,
+                                                                          children:
+                                                                              [
+                                                                            Align(
+                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              child: Text(
+                                                                                FFLocalizations.of(context).getText(
+                                                                                  'jl7ndttn' /* Start Date */,
+                                                                                ),
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                      letterSpacing: 0.0,
+                                                                                      useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                            InkWell(
+                                                                              splashColor: Colors.transparent,
+                                                                              focusColor: Colors.transparent,
+                                                                              hoverColor: Colors.transparent,
+                                                                              highlightColor: Colors.transparent,
+                                                                              onTap: () async {
+                                                                                final _datePicked1Date = await showDatePicker(
+                                                                                  context: context,
+                                                                                  initialDate: getCurrentTimestamp,
+                                                                                  firstDate: DateTime(1900),
+                                                                                  lastDate: (getCurrentTimestamp ?? DateTime(2050)),
+                                                                                  builder: (context, child) {
+                                                                                    return wrapInMaterialDatePickerTheme(
+                                                                                      context,
+                                                                                      child!,
+                                                                                      headerBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      headerForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      headerTextStyle: FlutterFlowTheme.of(context).headlineLarge.override(
+                                                                                            fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                                            fontSize: 32.0,
+                                                                                            letterSpacing: 0.0,
+                                                                                            fontWeight: FontWeight.w600,
+                                                                                            useGoogleFonts: !FlutterFlowTheme.of(context).headlineLargeIsCustom,
+                                                                                          ),
+                                                                                      pickerBackgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                      pickerForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      selectedDateTimeBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      selectedDateTimeForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      actionButtonForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      iconSize: 24.0,
+                                                                                    );
+                                                                                  },
+                                                                                );
+
+                                                                                if (_datePicked1Date != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked1 = DateTime(
+                                                                                      _datePicked1Date.year,
+                                                                                      _datePicked1Date.month,
+                                                                                      _datePicked1Date.day,
+                                                                                    );
+                                                                                  });
+                                                                                } else if (_model.datePicked1 != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked1 = getCurrentTimestamp;
+                                                                                  });
+                                                                                }
+                                                                                _model.startDate = _model.datePicked1;
+                                                                              },
+                                                                              child: Container(
+                                                                                decoration: BoxDecoration(
+                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                  borderRadius: BorderRadius.circular(8.0),
+                                                                                  border: Border.all(
+                                                                                    color: FlutterFlowTheme.of(context).alternate,
+                                                                                    width: 1.0,
+                                                                                  ),
+                                                                                ),
+                                                                                child: Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 4.0, 12.0),
+                                                                                  child: Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        valueOrDefault<String>(
+                                                                                          dateTimeFormat(
+                                                                                            "yyyy-MM-dd",
+                                                                                            _model.datePicked1,
+                                                                                            locale: FFLocalizations.of(context).languageCode,
+                                                                                          ),
+                                                                                          'Choose Start Date',
+                                                                                        ),
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                              letterSpacing: 0.0,
+                                                                                              useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ].divide(SizedBox(width: 8.0)),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Flexible(
+                                                                      flex: 1,
+                                                                      child:
+                                                                          Container(
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Column(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.min,
+                                                                          crossAxisAlignment:
+                                                                              CrossAxisAlignment.start,
+                                                                          children:
+                                                                              [
+                                                                            Align(
+                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              child: Text(
+                                                                                FFLocalizations.of(context).getText(
+                                                                                  'byttuy28' /* End Date */,
+                                                                                ),
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                      letterSpacing: 0.0,
+                                                                                      useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                            InkWell(
+                                                                              splashColor: Colors.transparent,
+                                                                              focusColor: Colors.transparent,
+                                                                              hoverColor: Colors.transparent,
+                                                                              highlightColor: Colors.transparent,
+                                                                              onTap: () async {
+                                                                                final _datePicked2Date = await showDatePicker(
+                                                                                  context: context,
+                                                                                  initialDate: getCurrentTimestamp,
+                                                                                  firstDate: DateTime(1900),
+                                                                                  lastDate: getCurrentTimestamp,
+                                                                                  builder: (context, child) {
+                                                                                    return wrapInMaterialDatePickerTheme(
+                                                                                      context,
+                                                                                      child!,
+                                                                                      headerBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      headerForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      headerTextStyle: FlutterFlowTheme.of(context).headlineLarge.override(
+                                                                                            fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                                            fontSize: 32.0,
+                                                                                            letterSpacing: 0.0,
+                                                                                            fontWeight: FontWeight.w600,
+                                                                                            useGoogleFonts: !FlutterFlowTheme.of(context).headlineLargeIsCustom,
+                                                                                          ),
+                                                                                      pickerBackgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                      pickerForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      selectedDateTimeBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      selectedDateTimeForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      actionButtonForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      iconSize: 24.0,
+                                                                                    );
+                                                                                  },
+                                                                                );
+
+                                                                                if (_datePicked2Date != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked2 = DateTime(
+                                                                                      _datePicked2Date.year,
+                                                                                      _datePicked2Date.month,
+                                                                                      _datePicked2Date.day,
+                                                                                    );
+                                                                                  });
+                                                                                } else if (_model.datePicked2 != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked2 = getCurrentTimestamp;
+                                                                                  });
+                                                                                }
+                                                                                _model.endDate = _model.datePicked2;
+                                                                              },
+                                                                              child: Container(
+                                                                                decoration: BoxDecoration(
+                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                  borderRadius: BorderRadius.circular(8.0),
+                                                                                  border: Border.all(
+                                                                                    color: FlutterFlowTheme.of(context).alternate,
+                                                                                    width: 1.0,
+                                                                                  ),
+                                                                                ),
+                                                                                child: Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(6.0, 12.0, 6.0, 12.0),
+                                                                                  child: Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        valueOrDefault<String>(
+                                                                                          dateTimeFormat(
+                                                                                            "yyyy-MM-dd",
+                                                                                            _model.datePicked2,
+                                                                                            locale: FFLocalizations.of(context).languageCode,
+                                                                                          ),
+                                                                                          'Choose End Date',
+                                                                                        ),
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                              letterSpacing: 0.0,
+                                                                                              useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ].divide(SizedBox(width: 8.0)),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ].divide(SizedBox(
+                                                                      width:
+                                                                          6.0)),
+                                                                ),
+                                                              ),
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            0.0),
+                                                                child: Wrap(
+                                                                  spacing: 10.0,
+                                                                  runSpacing:
+                                                                      5.0,
+                                                                  alignment:
+                                                                      WrapAlignment
+                                                                          .center,
+                                                                  crossAxisAlignment:
+                                                                      WrapCrossAlignment
+                                                                          .start,
+                                                                  direction: Axis
+                                                                      .horizontal,
+                                                                  runAlignment:
+                                                                      WrapAlignment
+                                                                          .start,
+                                                                  verticalDirection:
+                                                                      VerticalDirection
+                                                                          .down,
+                                                                  clipBehavior:
+                                                                      Clip.none,
+                                                                  children: [
+                                                                    Container(
+                                                                      decoration:
+                                                                          BoxDecoration(),
+                                                                      child:
+                                                                          FFButtonWidget(
+                                                                        onPressed:
+                                                                            () async {
+                                                                          safeSetState(
+                                                                              () {});
+                                                                        },
+                                                                        text: FFLocalizations.of(context)
+                                                                            .getText(
+                                                                          'tybzkrkf' /* Generate */,
+                                                                        ),
+                                                                        options:
+                                                                            FFButtonOptions(
+                                                                          width:
+                                                                              95.0,
+                                                                          height:
+                                                                              35.0,
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              8.0,
+                                                                              0.0,
+                                                                              8.0,
+                                                                              0.0),
+                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0),
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).primary,
+                                                                          textStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                                useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                              ),
+                                                                          elevation:
+                                                                              0.0,
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(16.0),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Container(
+                                                                      decoration:
+                                                                          BoxDecoration(),
+                                                                    ),
+                                                                    Container(
+                                                                      decoration:
+                                                                          BoxDecoration(),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ].addToEnd(SizedBox(
+                                                                height: 15.0)),
+                                                          ),
+                                                        ),
+                                                      ].divide(SizedBox(
+                                                          height: 16.0)),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
+                                                  height: 400.0,
+                                                  child:
+                                                      custom_widgets.StepsChart(
+                                                    width: MediaQuery.sizeOf(
+                                                                context)
+                                                            .width *
+                                                        1.0,
+                                                    height: 400.0,
+                                                    from: _model.startDate,
+                                                    to: _model.endDate,
                                                   ),
                                                 ),
                                                 Container(

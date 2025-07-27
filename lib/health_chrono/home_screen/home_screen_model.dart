@@ -10,6 +10,10 @@ class HomeScreenModel extends FlutterFlowModel<HomeScreenWidget> {
 
   int? step;
 
+  DateTime? startDate;
+
+  DateTime? endDate;
+
   ///  State fields for stateful widgets in this page.
 
   bool biometricClient = false;
@@ -17,6 +21,8 @@ class HomeScreenModel extends FlutterFlowModel<HomeScreenWidget> {
   late NoDataAvailableModel noDataAvailableModel;
   // Stores action output result for [Custom Action - getDailyStepCount] action in Button widget.
   int? steps;
+  DateTime? datePicked1;
+  DateTime? datePicked2;
   // State field(s) for Carousel widget.
   CarouselSliderController? carouselController;
   int carouselCurrentIndex = 1;

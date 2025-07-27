@@ -264,6 +264,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
+    '6ydk8czm': {
+      'en': 'Date Range',
+      'es': 'Rango de fechas',
+      'fr': 'Plage de dates',
+    },
+    'jl7ndttn': {
+      'en': 'Start Date',
+      'es': 'Fecha de inicio',
+      'fr': 'Date de début',
+    },
+    'byttuy28': {
+      'en': 'End Date',
+      'es': 'Fecha de finalización',
+      'fr': 'Date de fin',
+    },
+    'tybzkrkf': {
+      'en': 'Generate',
+      'es': 'Generar',
+      'fr': 'Générer',
+    },
     'jri81wl3': {
       'en': 'Home',
       'es': 'Hogar',
@@ -6204,13 +6224,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    't9emy0d2': {
-      'en': '11:00 AM',
+    'brcmi7v1': {
+      'en': '11:30 AM',
       'es': '',
       'fr': '',
     },
-    'brcmi7v1': {
-      'en': '11:30 AM',
+    't9emy0d2': {
+      'en': '11:00 AM',
       'es': '',
       'fr': '',
     },

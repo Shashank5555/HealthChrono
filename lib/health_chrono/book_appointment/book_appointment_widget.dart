@@ -3151,137 +3151,6 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget> {
                                                                               .jsonBody,
                                                                         )
                                                                         ?.toList(),
-                                                                    '11:00 AM',
-                                                                    _model.yss.toList())
-                                                                ? null
-                                                                : () async {
-                                                                    _model.startDate = functions
-                                                                        .getStartAndEndDateTime(
-                                                                            _model.calendarSelectedDay!.start,
-                                                                            '11:00 AM')
-                                                                        .firstOrNull;
-                                                                    _model.endDate = functions
-                                                                        .getStartAndEndDateTime(
-                                                                            _model.calendarSelectedDay!.start,
-                                                                            '11:00 AM')
-                                                                        .lastOrNull;
-                                                                    _model.isTappedIndex =
-                                                                        5;
-                                                                    safeSetState(
-                                                                        () {});
-                                                                  },
-                                                            text: FFLocalizations
-                                                                    .of(context)
-                                                                .getText(
-                                                              't9emy0d2' /* 11:00 AM */,
-                                                            ),
-                                                            options:
-                                                                FFButtonOptions(
-                                                              width: 100.0,
-                                                              height: 50.0,
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          16.0,
-                                                                          0.0,
-                                                                          16.0,
-                                                                          0.0),
-                                                              iconPadding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              color:
-                                                                  valueOrDefault<
-                                                                      Color>(
-                                                                _model.isTappedIndex ==
-                                                                        5
-                                                                    ? FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primary
-                                                                    : FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryBackground,
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryBackground,
-                                                              ),
-                                                              textStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                        color: valueOrDefault<
-                                                                            Color>(
-                                                                          _model.isTappedIndex == 5
-                                                                              ? FlutterFlowTheme.of(context).info
-                                                                              : FlutterFlowTheme.of(context).secondaryText,
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .secondaryText,
-                                                                        ),
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight:
-                                                                            FontWeight.w500,
-                                                                        useGoogleFonts:
-                                                                            !FlutterFlowTheme.of(context).bodyMediumIsCustom,
-                                                                      ),
-                                                              elevation: 0.0,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          8.0),
-                                                              disabledColor:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .error,
-                                                              disabledTextColor:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .info,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                        InkWell(
-                                                          splashColor: Colors
-                                                              .transparent,
-                                                          focusColor: Colors
-                                                              .transparent,
-                                                          hoverColor: Colors
-                                                              .transparent,
-                                                          highlightColor: Colors
-                                                              .transparent,
-                                                          onDoubleTap:
-                                                              () async {
-                                                            _model.isTappedIndex =
-                                                                null;
-                                                            _model.startDate =
-                                                                null;
-                                                            _model.endDate =
-                                                                null;
-                                                            safeSetState(() {});
-                                                          },
-                                                          child: FFButtonWidget(
-                                                            onPressed: functions.isTimeSlotBooked(
-                                                                    dateTimeFormat(
-                                                                      "yyyy-MM-dd",
-                                                                      _model
-                                                                          .calendarSelectedDay!
-                                                                          .start,
-                                                                      locale: FFLocalizations.of(
-                                                                              context)
-                                                                          .languageCode,
-                                                                    ),
-                                                                    NewAPIsGroup.getBookedAppointmentSlotsCall
-                                                                        .startTime(
-                                                                          timeSlotsListClientGetBookedAppointmentSlotsResponse
-                                                                              .jsonBody,
-                                                                        )
-                                                                        ?.toList(),
                                                                     '11:30 AM',
                                                                     _model.yss.toList())
                                                                 ? null
@@ -3349,6 +3218,137 @@ class _BookAppointmentWidgetState extends State<BookAppointmentWidget> {
                                                                         color: valueOrDefault<
                                                                             Color>(
                                                                           _model.isTappedIndex == 6
+                                                                              ? FlutterFlowTheme.of(context).info
+                                                                              : FlutterFlowTheme.of(context).secondaryText,
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .secondaryText,
+                                                                        ),
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
+                                                                        useGoogleFonts:
+                                                                            !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                      ),
+                                                              elevation: 0.0,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8.0),
+                                                              disabledColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .error,
+                                                              disabledTextColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .info,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        InkWell(
+                                                          splashColor: Colors
+                                                              .transparent,
+                                                          focusColor: Colors
+                                                              .transparent,
+                                                          hoverColor: Colors
+                                                              .transparent,
+                                                          highlightColor: Colors
+                                                              .transparent,
+                                                          onDoubleTap:
+                                                              () async {
+                                                            _model.isTappedIndex =
+                                                                null;
+                                                            _model.startDate =
+                                                                null;
+                                                            _model.endDate =
+                                                                null;
+                                                            safeSetState(() {});
+                                                          },
+                                                          child: FFButtonWidget(
+                                                            onPressed: functions.isTimeSlotBooked(
+                                                                    dateTimeFormat(
+                                                                      "yyyy-MM-dd",
+                                                                      _model
+                                                                          .calendarSelectedDay!
+                                                                          .start,
+                                                                      locale: FFLocalizations.of(
+                                                                              context)
+                                                                          .languageCode,
+                                                                    ),
+                                                                    NewAPIsGroup.getBookedAppointmentSlotsCall
+                                                                        .startTime(
+                                                                          timeSlotsListClientGetBookedAppointmentSlotsResponse
+                                                                              .jsonBody,
+                                                                        )
+                                                                        ?.toList(),
+                                                                    '11:00 AM',
+                                                                    _model.yss.toList())
+                                                                ? null
+                                                                : () async {
+                                                                    _model.startDate = functions
+                                                                        .getStartAndEndDateTime(
+                                                                            _model.calendarSelectedDay!.start,
+                                                                            '11:00 AM')
+                                                                        .firstOrNull;
+                                                                    _model.endDate = functions
+                                                                        .getStartAndEndDateTime(
+                                                                            _model.calendarSelectedDay!.start,
+                                                                            '11:00 AM')
+                                                                        .lastOrNull;
+                                                                    _model.isTappedIndex =
+                                                                        5;
+                                                                    safeSetState(
+                                                                        () {});
+                                                                  },
+                                                            text: FFLocalizations
+                                                                    .of(context)
+                                                                .getText(
+                                                              't9emy0d2' /* 11:00 AM */,
+                                                            ),
+                                                            options:
+                                                                FFButtonOptions(
+                                                              width: 100.0,
+                                                              height: 50.0,
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          16.0,
+                                                                          0.0,
+                                                                          16.0,
+                                                                          0.0),
+                                                              iconPadding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
+                                                              color:
+                                                                  valueOrDefault<
+                                                                      Color>(
+                                                                _model.isTappedIndex ==
+                                                                        5
+                                                                    ? FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary
+                                                                    : FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryBackground,
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryBackground,
+                                                              ),
+                                                              textStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                        color: valueOrDefault<
+                                                                            Color>(
+                                                                          _model.isTappedIndex == 5
                                                                               ? FlutterFlowTheme.of(context).info
                                                                               : FlutterFlowTheme.of(context).secondaryText,
                                                                           FlutterFlowTheme.of(context)
