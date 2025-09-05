@@ -259,3 +259,61 @@ int calculateAgeFromDate(String birthDateString) {
     return -1;
   }
 }
+
+String jsonGet(
+  String jsonString,
+  String path,
+  String defaultValue,
+) {
+  if (jsonString.isEmpty) return defaultValue;
+
+  dynamic root;
+  try {
+    root = jsonDecode(jsonString);
+  } catch (_) {
+    return defaultValue;
+  }
+  if (root == null) return defaultValue;
+
+  // Normalize: support "$.a.b", "a.b", "a[0].b", "$.a[0].b"
+  String p = path.trim();
+  if (p.isEmpty) return defaultValue;
+  if (p.startsWith(r'$.')) p = p.substring(2);
+  if (p.startsWith('.')) p = p.substring(1);
+
+  // Split into segments, expanding bracket notation: foo[0].bar -> ["foo","0","bar"]
+  final segs = <String>[];
+  for (final raw in p.split('.')) {
+    if (raw.isEmpty) continue;
+    final part = raw.replaceAll(']', '');
+    final split = part.split('['); // "foo[0][1]" -> ["foo","0","1"]
+    for (final s in split) {
+      if (s.isEmpty) continue;
+      segs.add(s);
+    }
+  }
+
+  dynamic cur = root;
+  for (final seg in segs) {
+    if (cur is Map<String, dynamic>) {
+      if (!cur.containsKey(seg)) return defaultValue;
+      cur = cur[seg];
+    } else if (cur is List) {
+      final idx = int.tryParse(seg);
+      if (idx == null || idx < 0 || idx >= cur.length) return defaultValue;
+      cur = cur[idx];
+    } else {
+      return defaultValue;
+    }
+  }
+
+  if (cur == null) return defaultValue;
+
+  // Normalize value to string safely
+  if (cur is num) {
+    if (cur.isNaN || cur.isInfinite) return defaultValue;
+    return cur.toString();
+  }
+  if (cur is bool) return cur ? 'true' : 'false';
+  return cur.toString();
+}

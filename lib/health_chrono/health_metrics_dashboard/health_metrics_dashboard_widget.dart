@@ -96,6 +96,26 @@ class _HealthMetricsDashboardWidgetState
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: () async {
+            context.pushNamed(HealthMetricsDashboardLiveWidget.routeName);
+          },
+          backgroundColor: FlutterFlowTheme.of(context).primary,
+          elevation: 8.0,
+          label: Text(
+            FFLocalizations.of(context).getText(
+              'fsgy0rqo' /* Live Data */,
+            ),
+            textAlign: TextAlign.center,
+            style: FlutterFlowTheme.of(context).bodyLarge.override(
+                  fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                  color: FlutterFlowTheme.of(context).alternate,
+                  letterSpacing: 0.0,
+                  useGoogleFonts:
+                      !FlutterFlowTheme.of(context).bodyLargeIsCustom,
+                ),
+          ),
+        ),
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(120.0),
           child: AppBar(

@@ -10,3 +10,5 @@ export 'waist_to_hip_gauge.dart' show WaistToHipGauge;
 export 'waist_to_height_gauge.dart' show WaistToHeightGauge;
 export 'systolic_blood_pressure_gauge.dart' show SystolicBloodPressureGauge;
 export 'diastolic_blood_pressure_gauge.dart' show DiastolicBloodPressureGauge;
+export 'steps_chart.dart' show StepsChart;
+export 'health_metric_range_chart.dart' show HealthMetricRangeChart;

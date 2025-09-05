@@ -321,14 +321,22 @@ class _RemindersWidgetState extends State<RemindersWidget> {
                   if ((_model.reminderResponse?.succeeded ?? true)) {
                     _model.showSuccessMsg = true;
                     safeSetState(() {});
-                    await Future.delayed(const Duration(milliseconds: 2500));
+                    await Future.delayed(
+                      Duration(
+                        milliseconds: 2500,
+                      ),
+                    );
                     _model.showSuccessMsg = false;
                     safeSetState(() {});
                     Navigator.pop(context);
                   } else {
                     _model.showErrorMsg = true;
                     safeSetState(() {});
-                    await Future.delayed(const Duration(milliseconds: 2500));
+                    await Future.delayed(
+                      Duration(
+                        milliseconds: 2500,
+                      ),
+                    );
                     _model.showErrorMsg = false;
                     safeSetState(() {});
                   }

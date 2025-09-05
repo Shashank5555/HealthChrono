@@ -368,9 +368,10 @@ class _LinkSearchWidgetState extends State<LinkSearchWidget>
                                                             true;
                                                         safeSetState(() {});
                                                         await Future.delayed(
-                                                            const Duration(
-                                                                milliseconds:
-                                                                    2500));
+                                                          Duration(
+                                                            milliseconds: 2500,
+                                                          ),
+                                                        );
                                                         _model.showSuccessMsg =
                                                             false;
                                                         safeSetState(() {});
@@ -380,9 +381,10 @@ class _LinkSearchWidgetState extends State<LinkSearchWidget>
                                                             true;
                                                         safeSetState(() {});
                                                         await Future.delayed(
-                                                            const Duration(
-                                                                milliseconds:
-                                                                    2500));
+                                                          Duration(
+                                                            milliseconds: 2500,
+                                                          ),
+                                                        );
                                                         _model.showErrorMsg =
                                                             false;
                                                         safeSetState(() {});
@@ -773,9 +775,10 @@ class _LinkSearchWidgetState extends State<LinkSearchWidget>
                                                             true;
                                                         safeSetState(() {});
                                                         await Future.delayed(
-                                                            const Duration(
-                                                                milliseconds:
-                                                                    2500));
+                                                          Duration(
+                                                            milliseconds: 2500,
+                                                          ),
+                                                        );
                                                         _model.showSuccessMsg =
                                                             false;
                                                         safeSetState(() {});
@@ -785,9 +788,10 @@ class _LinkSearchWidgetState extends State<LinkSearchWidget>
                                                             true;
                                                         safeSetState(() {});
                                                         await Future.delayed(
-                                                            const Duration(
-                                                                milliseconds:
-                                                                    2500));
+                                                          Duration(
+                                                            milliseconds: 2500,
+                                                          ),
+                                                        );
                                                         _model.showErrorMsg =
                                                             false;
                                                         safeSetState(() {});

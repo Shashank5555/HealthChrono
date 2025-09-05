@@ -92,3 +92,12 @@ export '/draft/appointments_new_final/appointments_new_final_widget.dart'
     show AppointmentsNewFinalWidget;
 export '/draft/practitioner_appointments_new_final/practitioner_appointments_new_final_widget.dart'
     show PractitionerAppointmentsNewFinalWidget;
+export '/health_chrono/home_screen_sensor/home_screen_sensor_widget.dart'
+    show HomeScreenSensorWidget;
+export '/jh/jh_widget.dart' show JhWidget;
+export '/sds/sds_widget.dart' show SdsWidget;
+export '/sdc/sdc_widget.dart' show SdcWidget;
+export '/health_chrono/health_metrics_dashboard_live/health_metrics_dashboard_live_widget.dart'
+    show HealthMetricsDashboardLiveWidget;
+export '/health_chrono/health_metrics_graphs_live/health_metrics_graphs_live_widget.dart'
+    show HealthMetricsGraphsLiveWidget;

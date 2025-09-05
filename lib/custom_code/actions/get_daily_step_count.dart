@@ -21,10 +21,12 @@ Future<int> getDailyStepCount() async {
   if (!(await Permission.activityRecognition.request()).isGranted) return 0;
 
   const types = [HealthDataType.STEPS];
-  const perms  = [HealthDataAccess.READ];
+  const perms = [HealthDataAccess.READ];
 
-  final already = await health.hasPermissions(types, permissions: perms) ?? false;
-  bool granted = already || await health.requestAuthorization(types, permissions: perms);
+  final already =
+      await health.hasPermissions(types, permissions: perms) ?? false;
+  bool granted =
+      already || await health.requestAuthorization(types, permissions: perms);
   if (!granted) return 0;
 
   // >>> History grant (only if you need >30 days) <<<
@@ -35,8 +37,9 @@ Future<int> getDailyStepCount() async {
     }
   }
 
-  final start = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
-  final end   = start.add(const Duration(days: 1));
+  final start =
+      DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
+  final end = start.add(const Duration(days: 1));
   final total = await health.getTotalStepsInInterval(start, end);
   if (total != null) return total;
 

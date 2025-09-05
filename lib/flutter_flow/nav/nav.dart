@@ -650,6 +650,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: PractitionerAppointmentsNewFinalWidget.routePath,
           builder: (context, params) =>
               PractitionerAppointmentsNewFinalWidget(),
+        ),
+        FFRoute(
+          name: HomeScreenSensorWidget.routeName,
+          path: HomeScreenSensorWidget.routePath,
+          builder: (context, params) => HomeScreenSensorWidget(),
+        ),
+        FFRoute(
+          name: JhWidget.routeName,
+          path: JhWidget.routePath,
+          builder: (context, params) => JhWidget(),
+        ),
+        FFRoute(
+          name: SdsWidget.routeName,
+          path: SdsWidget.routePath,
+          builder: (context, params) => SdsWidget(),
+        ),
+        FFRoute(
+          name: SdcWidget.routeName,
+          path: SdcWidget.routePath,
+          builder: (context, params) => SdcWidget(),
+        ),
+        FFRoute(
+          name: HealthMetricsDashboardLiveWidget.routeName,
+          path: HealthMetricsDashboardLiveWidget.routePath,
+          builder: (context, params) => HealthMetricsDashboardLiveWidget(
+            fromViewMetrics: params.getParam(
+              'fromViewMetrics',
+              ParamType.bool,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: HealthMetricsGraphsLiveWidget.routeName,
+          path: HealthMetricsGraphsLiveWidget.routePath,
+          builder: (context, params) => HealthMetricsGraphsLiveWidget(
+            metricName: params.getParam(
+              'metricName',
+              ParamType.String,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

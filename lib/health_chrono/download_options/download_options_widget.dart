@@ -168,14 +168,20 @@ class _DownloadOptionsWidgetState extends State<DownloadOptionsWidget> {
                                     _model.showSuccessMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showSuccessMsg = false;
                                     safeSetState(() {});
                                   } else {
                                     _model.showErrorMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showErrorMsg = false;
                                     safeSetState(() {});
                                   }
@@ -260,14 +266,20 @@ class _DownloadOptionsWidgetState extends State<DownloadOptionsWidget> {
                                     _model.showSuccessMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showSuccessMsg = false;
                                     safeSetState(() {});
                                   } else {
                                     _model.showErrorMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showErrorMsg = false;
                                     safeSetState(() {});
                                   }
@@ -719,14 +731,20 @@ class _DownloadOptionsWidgetState extends State<DownloadOptionsWidget> {
                                     _model.showSuccessMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showSuccessMsg = false;
                                     safeSetState(() {});
                                   } else {
                                     _model.showErrorMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showErrorMsg = false;
                                     safeSetState(() {});
                                   }
@@ -815,14 +833,20 @@ class _DownloadOptionsWidgetState extends State<DownloadOptionsWidget> {
                                     _model.showSuccessMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showSuccessMsg = false;
                                     safeSetState(() {});
                                   } else {
                                     _model.showErrorMsg = true;
                                     safeSetState(() {});
                                     await Future.delayed(
-                                        const Duration(milliseconds: 2500));
+                                      Duration(
+                                        milliseconds: 2500,
+                                      ),
+                                    );
                                     _model.showErrorMsg = false;
                                     safeSetState(() {});
                                   }

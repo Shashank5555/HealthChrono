@@ -259,11 +259,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '120/80 mmHg',
       'fr': '120/80 mmHg',
     },
-    '47e5p3qx': {
-      'en': 'Click',
-      'es': '',
-      'fr': '',
-    },
     'jri81wl3': {
       'en': 'Home',
       'es': 'Hogar',
@@ -1243,6 +1238,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'View Details',
       'es': 'Ver detalles',
       'fr': 'Voir les détails',
+    },
+    'fsgy0rqo': {
+      'en': 'Live Data',
+      'es': '',
+      'fr': '',
     },
     'fm1owstr': {
       'en': 'Health Data',
@@ -6204,13 +6204,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    't9emy0d2': {
-      'en': '11:00 AM',
+    'brcmi7v1': {
+      'en': '11:30 AM',
       'es': '',
       'fr': '',
     },
-    'brcmi7v1': {
-      'en': '11:30 AM',
+    't9emy0d2': {
+      'en': '11:00 AM',
       'es': '',
       'fr': '',
     },
@@ -6995,6 +6995,1031 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Appointments',
       'es': '',
       'fr': '',
+    },
+  },
+  // HomeScreenSensor
+  {
+    '6ddd88gz': {
+      'en': 'Health Monitor',
+      'es': 'Monitor de salud',
+      'fr': 'Moniteur de santé',
+    },
+    'jv7el7ha': {
+      'en': 'Quick Actions',
+      'es': '',
+      'fr': '',
+    },
+    'pvbotm2o': {
+      'en': 'Home',
+      'es': '',
+      'fr': '',
+    },
+    'so9h6jz6': {
+      'en': 'Health Data',
+      'es': '',
+      'fr': '',
+    },
+    'ez9fe01c': {
+      'en': 'Appointments',
+      'es': '',
+      'fr': '',
+    },
+    'svqooqff': {
+      'en': 'Profile',
+      'es': '',
+      'fr': '',
+    },
+    'x40mgspa': {
+      'en':
+          '\"Stay Hyderated : Aim to drink at least 8 glasses of water daily.\"',
+      'es': '',
+      'fr': '',
+    },
+    'qgs3wdeq': {
+      'en':
+          '\"Incorporate at least 30 minutes of physical activity into your routine each day.\"',
+      'es': '',
+      'fr': '',
+    },
+    'ciaam1jv': {
+      'en': 'Health Overview',
+      'es': 'Métricas recientes',
+      'fr': 'Mesures récentes',
+    },
+    '0gkhep98': {
+      'en': 'Recent Metrics',
+      'es': 'Métricas recientes',
+      'fr': 'Mesures récentes',
+    },
+    'citvomt9': {
+      'en': 'View All',
+      'es': 'Ver todo',
+      'fr': 'Tout voir',
+    },
+    'mdr0k6k4': {
+      'en': 'Heart Rate',
+      'es': 'Frecuencia cardíaca',
+      'fr': 'Fréquence cardiaque',
+    },
+    'h9wh82tv': {
+      'en': 'Blood Pressure',
+      'es': 'Presión arterial',
+      'fr': 'Pression artérielle',
+    },
+    'm6r1yl8u': {
+      'en': 'Weight',
+      'es': 'Peso',
+      'fr': 'Poids',
+    },
+    '76ua2o3x': {
+      'en': 'BMI',
+      'es': 'IMC',
+      'fr': 'IMC',
+    },
+    'nkcpe3oj': {
+      'en': 'Activity Level',
+      'es': 'IMC',
+      'fr': 'IMC',
+    },
+    'ttc1xd5u': {
+      'en': 'Start Measurements',
+      'es': 'Iniciar mediciones',
+      'fr': 'Commencer les mesures',
+    },
+    '7u3fz0ot': {
+      'en': 'Recent Activities',
+      'es': 'Actividades recientes',
+      'fr': 'Activités récentes',
+    },
+    'd4l5jp39': {
+      'en': 'Morning Walk',
+      'es': 'Paseo matutino',
+      'fr': 'Promenade matinale',
+    },
+    'lkrp9k6x': {
+      'en': '30 minutes • 2,500 steps',
+      'es': '30 minutos • 2.500 pasos',
+      'fr': '30 minutes • 2 500 pas',
+    },
+    'dkninq51': {
+      'en': 'Blood Pressure Check',
+      'es': 'Control de presión arterial',
+      'fr': 'Contrôle de la tension artérielle',
+    },
+    'dks8u9rm': {
+      'en': '120/80 mmHg',
+      'es': '120/80 mmHg',
+      'fr': '120/80 mmHg',
+    },
+    'fo82qpqv': {
+      'en': 'Click',
+      'es': '',
+      'fr': '',
+    },
+    '9ouckkz9': {
+      'en': 'Date Range',
+      'es': 'Rango de fechas',
+      'fr': 'Plage de dates',
+    },
+    'fxhcc2hh': {
+      'en': 'Start Date',
+      'es': 'Fecha de inicio',
+      'fr': 'Date de début',
+    },
+    '242sw13k': {
+      'en': 'End Date',
+      'es': 'Fecha de finalización',
+      'fr': 'Date de fin',
+    },
+    '8s3vh539': {
+      'en': 'Generate',
+      'es': 'Generar',
+      'fr': 'Générer',
+    },
+    '40z76vuk': {
+      'en': 'Home',
+      'es': 'Hogar',
+      'fr': 'Maison',
+    },
+    'idzt8xt6': {
+      'en': 'Verify to Login to your account',
+      'es': 'Verificar para iniciar sesión en su cuenta',
+      'fr': 'Vérifiez pour vous connecter à votre compte',
+    },
+  },
+  // jh
+  {
+    'tikt4fbg': {
+      'en': 'Health Connect',
+      'es': '',
+      'fr': '',
+    },
+    '5c8cgfll': {
+      'en': 'Live metrics',
+      'es': '',
+      'fr': '',
+    },
+    'suxgnhuk': {
+      'en': 'Weekly',
+      'es': '',
+      'fr': '',
+    },
+    'k2jwhinf': {
+      'en': 'Daily',
+      'es': '',
+      'fr': '',
+    },
+    'yz3nass2': {
+      'en': 'Weekly',
+      'es': '',
+      'fr': '',
+    },
+    'oflxv655': {
+      'en': 'Monthly',
+      'es': '',
+      'fr': '',
+    },
+    'z93o7079': {
+      'en': 'Heart Rate Trend',
+      'es': '',
+      'fr': '',
+    },
+    '3hvaaqre': {
+      'en': '72 BPM avg this week',
+      'es': '',
+      'fr': '',
+    },
+    'm0sm6orw': {
+      'en': 'Steps Today',
+      'es': '',
+      'fr': '',
+    },
+    '0mv0ldox': {
+      'en': '8,247',
+      'es': '',
+      'fr': '',
+    },
+    '1wm05mmc': {
+      'en': '+12% vs yesterday',
+      'es': '',
+      'fr': '',
+    },
+    'fzr0ts3a': {
+      'en': 'Active Calories',
+      'es': '',
+      'fr': '',
+    },
+    'vcx9lwf6': {
+      'en': '342',
+      'es': '',
+      'fr': '',
+    },
+    '1fm013c7': {
+      'en': 'Goal: 400 cal',
+      'es': '',
+      'fr': '',
+    },
+    'qqcrklu4': {
+      'en': 'Sleep Last Night',
+      'es': '',
+      'fr': '',
+    },
+    'ldtoc816': {
+      'en': '7h 23m',
+      'es': '',
+      'fr': '',
+    },
+    's33o323r': {
+      'en': 'Avg 7d: 7h 15m',
+      'es': '',
+      'fr': '',
+    },
+    '79tcz02d': {
+      'en': 'Distance Today',
+      'es': '',
+      'fr': '',
+    },
+    'g796emc0': {
+      'en': '6.2 km',
+      'es': '',
+      'fr': '',
+    },
+    'ftmo0x1g': {
+      'en': 'Personal best!',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // sds
+  {
+    '094bmtvg': {
+      'en': 'Health Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    '8n9jrt6x': {
+      'en': 'Real-time monitoring from your connected devices',
+      'es': '',
+      'fr': '',
+    },
+    'kd1dfo9n': {
+      'en': 'Live',
+      'es': '',
+      'fr': '',
+    },
+    'nvwhv8s6': {
+      'en': '72',
+      'es': '',
+      'fr': '',
+    },
+    '9ns436en': {
+      'en': 'BPM',
+      'es': '',
+      'fr': '',
+    },
+    'z1ha54zn': {
+      'en': 'Heart Rate',
+      'es': '',
+      'fr': '',
+    },
+    '8xfxlhxb': {
+      'en': 'Normal',
+      'es': '',
+      'fr': '',
+    },
+    'aq9myt5r': {
+      'en': '98',
+      'es': '',
+      'fr': '',
+    },
+    'hm17nme9': {
+      'en': '%',
+      'es': '',
+      'fr': '',
+    },
+    'lb1j8sta': {
+      'en': 'SpO₂',
+      'es': '',
+      'fr': '',
+    },
+    '1t4sq3ei': {
+      'en': 'Good',
+      'es': '',
+      'fr': '',
+    },
+    '7dccro7i': {
+      'en': '120',
+      'es': '',
+      'fr': '',
+    },
+    '2cc4vaal': {
+      'en': '/',
+      'es': '',
+      'fr': '',
+    },
+    '993s71ga': {
+      'en': '80',
+      'es': '',
+      'fr': '',
+    },
+    'iherrcd0': {
+      'en': 'mmHg',
+      'es': '',
+      'fr': '',
+    },
+    'hik52zwg': {
+      'en': 'Blood Pressure',
+      'es': '',
+      'fr': '',
+    },
+    '9u56suag': {
+      'en': 'Active',
+      'es': '',
+      'fr': '',
+    },
+    '56irap5a': {
+      'en': '8,247',
+      'es': '',
+      'fr': '',
+    },
+    'z6d50mbw': {
+      'en': 'steps',
+      'es': '',
+      'fr': '',
+    },
+    '6u8w43rb': {
+      'en': 'Today',
+      'es': '',
+      'fr': '',
+    },
+    'q7r1ftqj': {
+      'en': 'Additional Metrics',
+      'es': '',
+      'fr': '',
+    },
+    'phgrd6op': {
+      'en': 'View All',
+      'es': '',
+      'fr': '',
+    },
+    'x64q5uw8': {
+      'en': '342',
+      'es': '',
+      'fr': '',
+    },
+    'jyflry1b': {
+      'en': 'Cal',
+      'es': '',
+      'fr': '',
+    },
+    '2mx24xq3': {
+      'en': '7.2',
+      'es': '',
+      'fr': '',
+    },
+    'ublgvyyu': {
+      'en': 'Hours',
+      'es': '',
+      'fr': '',
+    },
+    'lp07cwfe': {
+      'en': '5.8',
+      'es': '',
+      'fr': '',
+    },
+    'dqrn1isl': {
+      'en': 'km',
+      'es': '',
+      'fr': '',
+    },
+    '3jb5lr12': {
+      'en': '16',
+      'es': '',
+      'fr': '',
+    },
+    '05cvhybl': {
+      'en': 'RPM',
+      'es': '',
+      'fr': '',
+    },
+    'y9910dsb': {
+      'en': '36.8',
+      'es': '',
+      'fr': '',
+    },
+    'oorf08tc': {
+      'en': '°C',
+      'es': '',
+      'fr': '',
+    },
+    'tamdqgb3': {
+      'en': '42',
+      'es': '',
+      'fr': '',
+    },
+    'l01n10n9': {
+      'en': 'HRV',
+      'es': '',
+      'fr': '',
+    },
+    '8aev2lw4': {
+      'en': 'Time Series Data',
+      'es': '',
+      'fr': '',
+    },
+    'hb0shh77': {
+      'en': 'Heart Rate Trends',
+      'es': '',
+      'fr': '',
+    },
+    'extg8cpk': {
+      'en': 'Last 24h',
+      'es': '',
+      'fr': '',
+    },
+    'h8ovg198': {
+      'en': '📈 HR Chart Visualization',
+      'es': '',
+      'fr': '',
+    },
+    'hmqep45w': {
+      'en': 'Blood Oxygen Levels',
+      'es': '',
+      'fr': '',
+    },
+    'szv7javc': {
+      'en': 'Last 12h',
+      'es': '',
+      'fr': '',
+    },
+    'gbbnskrv': {
+      'en': '📊 SpO₂ Chart Visualization',
+      'es': '',
+      'fr': '',
+    },
+    '7l8sazz9': {
+      'en': 'Blood Pressure History',
+      'es': '',
+      'fr': '',
+    },
+    'nv3i11ig': {
+      'en': 'Last 7 days',
+      'es': '',
+      'fr': '',
+    },
+    'qow9ak7v': {
+      'en': '📉 BP Chart Visualization',
+      'es': '',
+      'fr': '',
+    },
+    'nn1zlzrw': {
+      'en': 'Daily Step Count',
+      'es': '',
+      'fr': '',
+    },
+    'w06g7lzm': {
+      'en': 'Last 30 days',
+      'es': '',
+      'fr': '',
+    },
+    '92hyeops': {
+      'en': '📈 Steps Chart Visualization',
+      'es': '',
+      'fr': '',
+    },
+    '4r6xgnq6': {
+      'en': 'VO₂ Max Score',
+      'es': '',
+      'fr': '',
+    },
+    'x240lxvu': {
+      'en': '48.2',
+      'es': '',
+      'fr': '',
+    },
+    'bseed2tk': {
+      'en': 'Excellent fitness level',
+      'es': '',
+      'fr': '',
+    },
+    '1se8w907': {
+      'en': 'Last updated: 2 minutes ago',
+      'es': '',
+      'fr': '',
+    },
+    'okg8ywau': {
+      'en': 'Health Monitor',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // sdc
+  {
+    '16t4zcpu': {
+      'en': 'Health Dashboard',
+      'es': '',
+      'fr': '',
+    },
+    'tkwxsvqe': {
+      'en': 'Today, March 15, 2024',
+      'es': '',
+      'fr': '',
+    },
+    '1i0vunjr': {
+      'en': 'BPM',
+      'es': '',
+      'fr': '',
+    },
+    'p6twk73p': {
+      'en': '72',
+      'es': '',
+      'fr': '',
+    },
+    'yb5j1p2l': {
+      'en': 'Heart Rate',
+      'es': '',
+      'fr': '',
+    },
+    'thmikgg4': {
+      'en': '%',
+      'es': '',
+      'fr': '',
+    },
+    'k1e3mv1f': {
+      'en': '98',
+      'es': '',
+      'fr': '',
+    },
+    '5vdcbw3i': {
+      'en': 'SpO₂',
+      'es': '',
+      'fr': '',
+    },
+    '6v1avt8w': {
+      'en': 'mmHg',
+      'es': '',
+      'fr': '',
+    },
+    '14e0iav0': {
+      'en': '120',
+      'es': '',
+      'fr': '',
+    },
+    'ps7mff82': {
+      'en': '/80',
+      'es': '',
+      'fr': '',
+    },
+    'nesmabvl': {
+      'en': 'Blood Pressure',
+      'es': '',
+      'fr': '',
+    },
+    'tz54z3io': {
+      'en': 'steps',
+      'es': '',
+      'fr': '',
+    },
+    'e0xitbi9': {
+      'en': '8,247',
+      'es': '',
+      'fr': '',
+    },
+    'lpmh0hdq': {
+      'en': 'Steps Today',
+      'es': '',
+      'fr': '',
+    },
+    'lq2btlzq': {
+      'en': 'Heart Rate Trend',
+      'es': '',
+      'fr': '',
+    },
+    '1se1lu7e': {
+      'en': 'Last 24h',
+      'es': '',
+      'fr': '',
+    },
+    'hzcvtkqm': {
+      'en': 'kcal',
+      'es': '',
+      'fr': '',
+    },
+    '4csov43a': {
+      'en': '342',
+      'es': '',
+      'fr': '',
+    },
+    'hooj5mp0': {
+      'en': 'Active Calories',
+      'es': '',
+      'fr': '',
+    },
+    'ou07rnwc': {
+      'en': 'hrs',
+      'es': '',
+      'fr': '',
+    },
+    'csuhjb7f': {
+      'en': '7.5',
+      'es': '',
+      'fr': '',
+    },
+    '2t5uay1k': {
+      'en': 'Sleep Hours',
+      'es': '',
+      'fr': '',
+    },
+    'lwvplvxq': {
+      'en': 'km',
+      'es': '',
+      'fr': '',
+    },
+    '6uhoev3v': {
+      'en': '6.2',
+      'es': '',
+      'fr': '',
+    },
+    'sq4ce98x': {
+      'en': 'Distance',
+      'es': '',
+      'fr': '',
+    },
+    '8n2691t8': {
+      'en': '/min',
+      'es': '',
+      'fr': '',
+    },
+    'ft4ihh88': {
+      'en': '16',
+      'es': '',
+      'fr': '',
+    },
+    'd0swi4jh': {
+      'en': 'Respiratory',
+      'es': '',
+      'fr': '',
+    },
+    'aiz52piw': {
+      'en': '°C',
+      'es': '',
+      'fr': '',
+    },
+    'jd64d2ym': {
+      'en': '36.8',
+      'es': '',
+      'fr': '',
+    },
+    'flqd16wy': {
+      'en': 'Body Temp',
+      'es': '',
+      'fr': '',
+    },
+    'cj1cbufs': {
+      'en': 'ms',
+      'es': '',
+      'fr': '',
+    },
+    '9480d2le': {
+      'en': '42',
+      'es': '',
+      'fr': '',
+    },
+    '92gewhi7': {
+      'en': 'HRV',
+      'es': '',
+      'fr': '',
+    },
+    'w61g77xc': {
+      'en': 'ml/kg',
+      'es': '',
+      'fr': '',
+    },
+    'efbnya1q': {
+      'en': '48.2',
+      'es': '',
+      'fr': '',
+    },
+    '1qhyc9o7': {
+      'en': 'VO₂ Max',
+      'es': '',
+      'fr': '',
+    },
+    'djropeb2': {
+      'en': '68%',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // HealthMetricsDashboardLive
+  {
+    'wm249f7y': {
+      'en': 'Health Dashboard',
+      'es': 'Panel de salud',
+      'fr': 'Tableau de bord de santé',
+    },
+    '0pvjk9sc': {
+      'en': 'Your live health data at a glance',
+      'es': 'Sus métricas de salud diarias de un vistazo',
+      'fr': 'Vos mesures de santé quotidiennes en un coup d\'œil',
+    },
+    'zbk28ivr': {
+      'en': 'Heart Rate',
+      'es': 'Frecuencia cardíaca',
+      'fr': 'Fréquence cardiaque',
+    },
+    '2miuwfwx': {
+      'en': 'BPM',
+      'es': 'BPM',
+      'fr': 'BPM',
+    },
+    'iw5aiead': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'j6tthne7': {
+      'en': 'Blood Oxygen',
+      'es': 'Frecuencia cardíaca',
+      'fr': 'Fréquence cardiaque',
+    },
+    '8i04q7cn': {
+      'en': 'SpO2',
+      'es': 'BPM',
+      'fr': 'BPM',
+    },
+    'vtj07vwg': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    '6pkhhlt0': {
+      'en': 'VO2 Max',
+      'es': 'Frecuencia cardíaca',
+      'fr': 'Fréquence cardiaque',
+    },
+    'bh6e6n40': {
+      'en': '72',
+      'es': '72',
+      'fr': '72',
+    },
+    'qvu9v0ol': {
+      'en': 'SpO2',
+      'es': 'BPM',
+      'fr': 'BPM',
+    },
+    'dqiacxj1': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'nfs72tpe': {
+      'en': 'Blood Pressure',
+      'es': 'Presión arterial',
+      'fr': 'Pression artérielle',
+    },
+    'f4uvl565': {
+      'en': 'mmHg',
+      'es': 'mmHg',
+      'fr': 'mmHg',
+    },
+    'fggue67o': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'ijtv2yu3': {
+      'en': 'Blood Glucose',
+      'es': 'Presión arterial',
+      'fr': 'Pression artérielle',
+    },
+    'fuj98bpr': {
+      'en': 'MgDl',
+      'es': 'mmHg',
+      'fr': 'mmHg',
+    },
+    'ftyup1s6': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'q1z415jq': {
+      'en': 'Steps',
+      'es': 'Índice metabólico básico',
+      'fr': 'Indice métabolique de base',
+    },
+    'q9s1lbhb': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'lvee1m2l': {
+      'en': 'Active Calories',
+      'es': 'Índice metabólico básico',
+      'fr': 'Indice métabolique de base',
+    },
+    'pfbb4h9y': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'triet242': {
+      'en': 'Distance',
+      'es': 'Índice metabólico básico',
+      'fr': 'Indice métabolique de base',
+    },
+    'd8n8cw47': {
+      'en': '1600',
+      'es': '8,547',
+      'fr': '8 547',
+    },
+    'cj5ly91j': {
+      'en': 'Kms',
+      'es': 'mmHg',
+      'fr': 'mmHg',
+    },
+    'su7bdqlg': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    '1n32oqpg': {
+      'en': 'Exercise',
+      'es': 'Índice metabólico básico',
+      'fr': 'Indice métabolique de base',
+    },
+    'e2oewwka': {
+      'en': '1600',
+      'es': '8,547',
+      'fr': '8 547',
+    },
+    '3zi1b34t': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'jbn1vbs8': {
+      'en': 'Basal Metabolic Rate',
+      'es': 'Relación cintura-cadera',
+      'fr': 'Rapport taille/hanches',
+    },
+    '87y8j4t1': {
+      'en': '1.0',
+      'es': '8,547',
+      'fr': '8 547',
+    },
+    '5yoif26p': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    '1cvqlfsq': {
+      'en': 'Stress',
+      'es': 'Relación cintura-cadera',
+      'fr': 'Rapport taille/hanches',
+    },
+    'bcgqvwx8': {
+      'en': '1.0',
+      'es': '8,547',
+      'fr': '8 547',
+    },
+    'h3ysyenr': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'xcqj0ocy': {
+      'en': 'Body Temperature',
+      'es': 'Relación cintura-altura',
+      'fr': 'Rapport taille/hauteur',
+    },
+    'yg0zutu0': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'e7fwjgts': {
+      'en': 'Body Fat',
+      'es': 'Relación cintura-altura',
+      'fr': 'Rapport taille/hauteur',
+    },
+    'legszi5i': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'iftjij2u': {
+      'en': 'Respiratory Rate',
+      'es': 'Relación cintura-altura',
+      'fr': 'Rapport taille/hauteur',
+    },
+    'jo841cuo': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'eo64ty6l': {
+      'en': 'Hydration',
+      'es': 'Relación cintura-altura',
+      'fr': 'Rapport taille/hauteur',
+    },
+    'fc5ls0dh': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    's6fy6qcw': {
+      'en': 'Sleep',
+      'es': 'Relación cintura-altura',
+      'fr': 'Rapport taille/hauteur',
+    },
+    '61nopq2y': {
+      'en': 'View Details',
+      'es': 'Ver detalles',
+      'fr': 'Voir les détails',
+    },
+    'b3jxvaq6': {
+      'en': 'Health Data',
+      'es': 'Datos de salud',
+      'fr': 'Données sur la santé',
+    },
+  },
+  // HealthMetricsGraphsLive
+  {
+    'usaauwen': {
+      'en': 'Health Trends',
+      'es': 'Tendencias de salud',
+      'fr': 'Tendances en matière de santé',
+    },
+    'ox7fgb9e': {
+      'en': 'Your health data trends at a glance',
+      'es': 'Las tendencias de sus datos de salud de un vistazo',
+      'fr': 'Aperçu des tendances de vos données de santé',
+    },
+    'zgpa2ep3': {
+      'en': 'Date Range',
+      'es': 'Rango de fechas',
+      'fr': 'Plage de dates',
+    },
+    'cdrkotfa': {
+      'en': 'Start Date',
+      'es': 'Fecha de inicio',
+      'fr': 'Date de début',
+    },
+    'n6q67j9d': {
+      'en': 'End Date',
+      'es': 'Fecha de finalización',
+      'fr': 'Date de fin',
+    },
+    'lpiwkzqv': {
+      'en': 'Generate',
+      'es': 'Generar',
+      'fr': 'Générer',
+    },
+    '0u7zamdi': {
+      'en': 'Overview',
+      'es': 'Descripción general',
+      'fr': 'Aperçu',
+    },
+    'kcns1dw2': {
+      'en': 'Today',
+      'es': 'Hoy',
+      'fr': 'Aujourd\'hui',
+    },
+    'zz7e7t3i': {
+      'en': 'Week',
+      'es': 'Semana',
+      'fr': 'Semaine',
+    },
+    'n8qfmgh9': {
+      'en': 'Month',
+      'es': 'Mes',
+      'fr': 'Mois',
+    },
+    'mml4ow8f': {
+      'en': 'Year',
+      'es': 'Año',
+      'fr': 'Année',
+    },
+    'x29o4j25': {
+      'en': '',
+      'es': '',
+      'fr': '',
+    },
+    'l4yj866m': {
+      'en': 'Systolic Blood Pressure',
+      'es': '',
+      'fr': '',
+    },
+    'm20t5558': {
+      'en': 'Diastolic Blood Pressure',
+      'es': '',
+      'fr': '',
+    },
+    '68lgc27u': {
+      'en': 'Health Data',
+      'es': 'Datos de salud',
+      'fr': 'Données sur la santé',
     },
   },
   // DownloadOptions

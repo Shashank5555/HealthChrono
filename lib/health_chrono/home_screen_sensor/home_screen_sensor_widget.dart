@@ -4,6 +4,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/health_chrono/no_data_available/no_data_available_widget.dart';
+import '/custom_code/actions/index.dart' as actions;
+import '/custom_code/widgets/index.dart' as custom_widgets;
 import '/index.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -12,28 +14,28 @@ import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:provider/provider.dart';
-import 'home_screen_model.dart';
-export 'home_screen_model.dart';
+import 'home_screen_sensor_model.dart';
+export 'home_screen_sensor_model.dart';
 
-class HomeScreenWidget extends StatefulWidget {
-  const HomeScreenWidget({super.key});
+class HomeScreenSensorWidget extends StatefulWidget {
+  const HomeScreenSensorWidget({super.key});
 
-  static String routeName = 'HomeScreen';
-  static String routePath = '/homeScreen';
+  static String routeName = 'HomeScreenSensor';
+  static String routePath = '/homeScreenSensor';
 
   @override
-  State<HomeScreenWidget> createState() => _HomeScreenWidgetState();
+  State<HomeScreenSensorWidget> createState() => _HomeScreenSensorWidgetState();
 }
 
-class _HomeScreenWidgetState extends State<HomeScreenWidget> {
-  late HomeScreenModel _model;
+class _HomeScreenSensorWidgetState extends State<HomeScreenSensorWidget> {
+  late HomeScreenSensorModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomeScreenModel());
+    _model = createModel(context, () => HomeScreenSensorModel());
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
@@ -51,7 +53,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
             try {
               _model.biometricClient = await _localAuth.authenticate(
                   localizedReason: FFLocalizations.of(context).getText(
-                'n3dfpa1u' /* Verify to Login to your accoun... */,
+                'idzt8xt6' /* Verify to Login to your accoun... */,
               ));
             } on PlatformException {
               _model.biometricClient = false;
@@ -61,7 +63,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
 
           if (_model.biometricClient) {
             context.goNamedAuth(
-              HomeScreenWidget.routeName,
+              HomeScreenSensorWidget.routeName,
               context.mounted,
               extra: <String, dynamic>{
                 kTransitionInfoKey: TransitionInfo(
@@ -153,7 +155,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'i9gklzdx' /* Health Monitor */,
+                          '6ddd88gz' /* Health Monitor */,
                         ),
                         style:
                             FlutterFlowTheme.of(context).displaySmall.override(
@@ -309,7 +311,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'jfmnt0s2' /* Quick Actions */,
+                                                      'jv7el7ha' /* Quick Actions */,
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
@@ -364,7 +366,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                     .transparent,
                                                             onTap: () async {
                                                               context.goNamed(
-                                                                  HomeScreenWidget
+                                                                  HomeScreenSensorWidget
                                                                       .routeName);
                                                             },
                                                             child: Container(
@@ -408,7 +410,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'q9h876sb' /* Home */,
+                                                                          'pvbotm2o' /* Home */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelLarge
@@ -511,7 +513,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'uj92cw0c' /* Health Data */,
+                                                                          'so9h6jz6' /* Health Data */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelLarge
@@ -604,7 +606,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          '0imsqdxg' /* Appointments */,
+                                                                          'ez9fe01c' /* Appointments */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelLarge
@@ -694,7 +696,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'tzh3ffsm' /* Profile */,
+                                                                          'svqooqff' /* Profile */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelLarge
@@ -767,7 +769,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'azk544s0' /* "Stay Hyderated : Aim to drink... */,
+                                                              'x40mgspa' /* "Stay Hyderated : Aim to drink... */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -807,7 +809,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'n17nah8u' /* "Incorporate at least 30 minut... */,
+                                                              'qgs3wdeq' /* "Incorporate at least 30 minut... */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -921,7 +923,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'yiz1ovpb' /* Health Overview */,
+                                                          'ciaam1jv' /* Health Overview */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1033,7 +1035,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'o4zrem1s' /* Recent Metrics */,
+                                                                          '0gkhep98' /* Recent Metrics */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .headlineSmall
@@ -1055,7 +1057,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                     text: FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'xt2u14eh' /* View All */,
+                                                                      'citvomt9' /* View All */,
                                                                     ),
                                                                     options:
                                                                         FFButtonOptions(
@@ -1175,7 +1177,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                                   ),
                                                                                   Text(
                                                                                     FFLocalizations.of(context).getText(
-                                                                                      '4f0itcdh' /* Heart Rate */,
+                                                                                      'mdr0k6k4' /* Heart Rate */,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1228,7 +1230,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                                   ),
                                                                                   Text(
                                                                                     FFLocalizations.of(context).getText(
-                                                                                      '94905v13' /* Blood Pressure */,
+                                                                                      'h9wh82tv' /* Blood Pressure */,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1279,7 +1281,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                                   ),
                                                                                   Text(
                                                                                     FFLocalizations.of(context).getText(
-                                                                                      'mtuetw1c' /* Weight */,
+                                                                                      'm6r1yl8u' /* Weight */,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1336,7 +1338,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                                   ),
                                                                                   Text(
                                                                                     FFLocalizations.of(context).getText(
-                                                                                      '0rlsv8zj' /* BMI */,
+                                                                                      '76ua2o3x' /* BMI */,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1420,7 +1422,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                                   ),
                                                                                   Text(
                                                                                     FFLocalizations.of(context).getText(
-                                                                                      'w6arvwed' /* Activity Level */,
+                                                                                      'nkcpe3oj' /* Activity Level */,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1495,7 +1497,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'gewrle1z' /* Start Measurements */,
+                                                    'ttc1xd5u' /* Start Measurements */,
                                                   ),
                                                   options: FFButtonOptions(
                                                     width: MediaQuery.sizeOf(
@@ -1581,7 +1583,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                '1vgpsqrl' /* Recent Activities */,
+                                                                '7u3fz0ot' /* Recent Activities */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1639,7 +1641,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            '9uj8qfm9' /* Morning Walk */,
+                                                                            'd4l5jp39' /* Morning Walk */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyLarge
@@ -1653,7 +1655,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'bi2xkmii' /* 30 minutes • 2,500 steps */,
+                                                                            'lkrp9k6x' /* 30 minutes • 2,500 steps */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -1721,7 +1723,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'srbe0yhw' /* Blood Pressure Check */,
+                                                                            'dkninq51' /* Blood Pressure Check */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyLarge
@@ -1735,7 +1737,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'lnbuj4uz' /* 120/80 mmHg */,
+                                                                            'dks8u9rm' /* 120/80 mmHg */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -1767,6 +1769,581 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                       ),
                                                     ),
                                                   ),
+                                                Text(
+                                                  _model.step.toString(),
+                                                  style:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
+                                                            letterSpacing: 0.0,
+                                                            useGoogleFonts:
+                                                                !FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumIsCustom,
+                                                          ),
+                                                ),
+                                                FFButtonWidget(
+                                                  onPressed: () async {
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .showSnackBar(
+                                                      SnackBar(
+                                                        content: Text(
+                                                          'Clicked first',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .info,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts:
+                                                                    !FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMediumIsCustom,
+                                                              ),
+                                                        ),
+                                                        duration: Duration(
+                                                            milliseconds: 1750),
+                                                        backgroundColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                      ),
+                                                    );
+                                                    _model.steps = await actions
+                                                        .getDailyStepCount();
+                                                    _model.step = _model.steps;
+                                                    safeSetState(() {});
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .showSnackBar(
+                                                      SnackBar(
+                                                        content: Text(
+                                                          'Clicked last',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .info,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts:
+                                                                    !FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMediumIsCustom,
+                                                              ),
+                                                        ),
+                                                        duration: Duration(
+                                                            milliseconds: 2600),
+                                                        backgroundColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                      ),
+                                                    );
+
+                                                    safeSetState(() {});
+                                                  },
+                                                  text: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'fo82qpqv' /* Click */,
+                                                  ),
+                                                  options: FFButtonOptions(
+                                                    width: MediaQuery.sizeOf(
+                                                                context)
+                                                            .width *
+                                                        1.0,
+                                                    height: 55.0,
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(16.0, 0.0,
+                                                                16.0, 0.0),
+                                                    iconPadding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                0.0, 0.0),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    textStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleMedium
+                                                            .override(
+                                                              fontFamily:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleMediumFamily,
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primaryBackground,
+                                                              letterSpacing:
+                                                                  0.0,
+                                                              useGoogleFonts:
+                                                                  !FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleMediumIsCustom,
+                                                            ),
+                                                    elevation: 0.0,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            14.0),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            12.0),
+                                                    border: Border.all(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .alternate,
+                                                      width: 2.0,
+                                                    ),
+                                                  ),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                16.0,
+                                                                16.0,
+                                                                16.0,
+                                                                16.0),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.min,
+                                                      children: [
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '9ouckkz9' /* Date Range */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .headlineSmall
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .headlineSmallFamily,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    useGoogleFonts:
+                                                                        !FlutterFlowTheme.of(context)
+                                                                            .headlineSmallIsCustom,
+                                                                  ),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              width: 12.0)),
+                                                        ),
+                                                        Container(
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        16.0),
+                                                            border: Border.all(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .alternate,
+                                                            ),
+                                                          ),
+                                                          child: Column(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsets
+                                                                        .all(
+                                                                            16.0),
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Flexible(
+                                                                      flex: 1,
+                                                                      child:
+                                                                          Container(
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Column(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.min,
+                                                                          crossAxisAlignment:
+                                                                              CrossAxisAlignment.start,
+                                                                          children:
+                                                                              [
+                                                                            Align(
+                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              child: Text(
+                                                                                FFLocalizations.of(context).getText(
+                                                                                  'fxhcc2hh' /* Start Date */,
+                                                                                ),
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                      letterSpacing: 0.0,
+                                                                                      useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                            InkWell(
+                                                                              splashColor: Colors.transparent,
+                                                                              focusColor: Colors.transparent,
+                                                                              hoverColor: Colors.transparent,
+                                                                              highlightColor: Colors.transparent,
+                                                                              onTap: () async {
+                                                                                final _datePicked1Date = await showDatePicker(
+                                                                                  context: context,
+                                                                                  initialDate: getCurrentTimestamp,
+                                                                                  firstDate: DateTime(1900),
+                                                                                  lastDate: (getCurrentTimestamp ?? DateTime(2050)),
+                                                                                  builder: (context, child) {
+                                                                                    return wrapInMaterialDatePickerTheme(
+                                                                                      context,
+                                                                                      child!,
+                                                                                      headerBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      headerForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      headerTextStyle: FlutterFlowTheme.of(context).headlineLarge.override(
+                                                                                            fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                                            fontSize: 32.0,
+                                                                                            letterSpacing: 0.0,
+                                                                                            fontWeight: FontWeight.w600,
+                                                                                            useGoogleFonts: !FlutterFlowTheme.of(context).headlineLargeIsCustom,
+                                                                                          ),
+                                                                                      pickerBackgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                      pickerForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      selectedDateTimeBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      selectedDateTimeForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      actionButtonForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      iconSize: 24.0,
+                                                                                    );
+                                                                                  },
+                                                                                );
+
+                                                                                if (_datePicked1Date != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked1 = DateTime(
+                                                                                      _datePicked1Date.year,
+                                                                                      _datePicked1Date.month,
+                                                                                      _datePicked1Date.day,
+                                                                                    );
+                                                                                  });
+                                                                                } else if (_model.datePicked1 != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked1 = getCurrentTimestamp;
+                                                                                  });
+                                                                                }
+                                                                                _model.startDate = _model.datePicked1;
+                                                                              },
+                                                                              child: Container(
+                                                                                decoration: BoxDecoration(
+                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                  borderRadius: BorderRadius.circular(8.0),
+                                                                                  border: Border.all(
+                                                                                    color: FlutterFlowTheme.of(context).alternate,
+                                                                                    width: 1.0,
+                                                                                  ),
+                                                                                ),
+                                                                                child: Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 4.0, 12.0),
+                                                                                  child: Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        valueOrDefault<String>(
+                                                                                          dateTimeFormat(
+                                                                                            "yyyy-MM-dd",
+                                                                                            _model.datePicked1,
+                                                                                            locale: FFLocalizations.of(context).languageCode,
+                                                                                          ),
+                                                                                          'Choose Start Date',
+                                                                                        ),
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                              letterSpacing: 0.0,
+                                                                                              useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ].divide(SizedBox(width: 8.0)),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Flexible(
+                                                                      flex: 1,
+                                                                      child:
+                                                                          Container(
+                                                                        decoration:
+                                                                            BoxDecoration(),
+                                                                        child:
+                                                                            Column(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.min,
+                                                                          crossAxisAlignment:
+                                                                              CrossAxisAlignment.start,
+                                                                          children:
+                                                                              [
+                                                                            Align(
+                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              child: Text(
+                                                                                FFLocalizations.of(context).getText(
+                                                                                  '242sw13k' /* End Date */,
+                                                                                ),
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                      letterSpacing: 0.0,
+                                                                                      useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                            InkWell(
+                                                                              splashColor: Colors.transparent,
+                                                                              focusColor: Colors.transparent,
+                                                                              hoverColor: Colors.transparent,
+                                                                              highlightColor: Colors.transparent,
+                                                                              onTap: () async {
+                                                                                final _datePicked2Date = await showDatePicker(
+                                                                                  context: context,
+                                                                                  initialDate: getCurrentTimestamp,
+                                                                                  firstDate: DateTime(1900),
+                                                                                  lastDate: getCurrentTimestamp,
+                                                                                  builder: (context, child) {
+                                                                                    return wrapInMaterialDatePickerTheme(
+                                                                                      context,
+                                                                                      child!,
+                                                                                      headerBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      headerForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      headerTextStyle: FlutterFlowTheme.of(context).headlineLarge.override(
+                                                                                            fontFamily: FlutterFlowTheme.of(context).headlineLargeFamily,
+                                                                                            fontSize: 32.0,
+                                                                                            letterSpacing: 0.0,
+                                                                                            fontWeight: FontWeight.w600,
+                                                                                            useGoogleFonts: !FlutterFlowTheme.of(context).headlineLargeIsCustom,
+                                                                                          ),
+                                                                                      pickerBackgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                      pickerForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      selectedDateTimeBackgroundColor: FlutterFlowTheme.of(context).primary,
+                                                                                      selectedDateTimeForegroundColor: FlutterFlowTheme.of(context).info,
+                                                                                      actionButtonForegroundColor: FlutterFlowTheme.of(context).primaryText,
+                                                                                      iconSize: 24.0,
+                                                                                    );
+                                                                                  },
+                                                                                );
+
+                                                                                if (_datePicked2Date != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked2 = DateTime(
+                                                                                      _datePicked2Date.year,
+                                                                                      _datePicked2Date.month,
+                                                                                      _datePicked2Date.day,
+                                                                                    );
+                                                                                  });
+                                                                                } else if (_model.datePicked2 != null) {
+                                                                                  safeSetState(() {
+                                                                                    _model.datePicked2 = getCurrentTimestamp;
+                                                                                  });
+                                                                                }
+                                                                                _model.endDate = _model.datePicked2;
+                                                                              },
+                                                                              child: Container(
+                                                                                decoration: BoxDecoration(
+                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                  borderRadius: BorderRadius.circular(8.0),
+                                                                                  border: Border.all(
+                                                                                    color: FlutterFlowTheme.of(context).alternate,
+                                                                                    width: 1.0,
+                                                                                  ),
+                                                                                ),
+                                                                                child: Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(6.0, 12.0, 6.0, 12.0),
+                                                                                  child: Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.center,
+                                                                                    children: [
+                                                                                      Text(
+                                                                                        valueOrDefault<String>(
+                                                                                          dateTimeFormat(
+                                                                                            "yyyy-MM-dd",
+                                                                                            _model.datePicked2,
+                                                                                            locale: FFLocalizations.of(context).languageCode,
+                                                                                          ),
+                                                                                          'Choose End Date',
+                                                                                        ),
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                              letterSpacing: 0.0,
+                                                                                              useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ].divide(SizedBox(width: 8.0)),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ].divide(SizedBox(
+                                                                      width:
+                                                                          6.0)),
+                                                                ),
+                                                              ),
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            0.0),
+                                                                child: Wrap(
+                                                                  spacing: 10.0,
+                                                                  runSpacing:
+                                                                      5.0,
+                                                                  alignment:
+                                                                      WrapAlignment
+                                                                          .center,
+                                                                  crossAxisAlignment:
+                                                                      WrapCrossAlignment
+                                                                          .start,
+                                                                  direction: Axis
+                                                                      .horizontal,
+                                                                  runAlignment:
+                                                                      WrapAlignment
+                                                                          .start,
+                                                                  verticalDirection:
+                                                                      VerticalDirection
+                                                                          .down,
+                                                                  clipBehavior:
+                                                                      Clip.none,
+                                                                  children: [
+                                                                    Container(
+                                                                      decoration:
+                                                                          BoxDecoration(),
+                                                                      child:
+                                                                          FFButtonWidget(
+                                                                        onPressed:
+                                                                            () async {
+                                                                          safeSetState(
+                                                                              () {});
+                                                                        },
+                                                                        text: FFLocalizations.of(context)
+                                                                            .getText(
+                                                                          '8s3vh539' /* Generate */,
+                                                                        ),
+                                                                        options:
+                                                                            FFButtonOptions(
+                                                                          width:
+                                                                              95.0,
+                                                                          height:
+                                                                              35.0,
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              8.0,
+                                                                              0.0,
+                                                                              8.0,
+                                                                              0.0),
+                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0),
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).primary,
+                                                                          textStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                color: FlutterFlowTheme.of(context).info,
+                                                                                letterSpacing: 0.0,
+                                                                                useGoogleFonts: !FlutterFlowTheme.of(context).bodyMediumIsCustom,
+                                                                              ),
+                                                                          elevation:
+                                                                              0.0,
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(16.0),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Container(
+                                                                      decoration:
+                                                                          BoxDecoration(),
+                                                                    ),
+                                                                    Container(
+                                                                      decoration:
+                                                                          BoxDecoration(),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ].addToEnd(SizedBox(
+                                                                height: 15.0)),
+                                                          ),
+                                                        ),
+                                                      ].divide(SizedBox(
+                                                          height: 16.0)),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
+                                                  height: 400.0,
+                                                  child:
+                                                      custom_widgets.StepsChart(
+                                                    width: MediaQuery.sizeOf(
+                                                                context)
+                                                            .width *
+                                                        1.0,
+                                                    height: 400.0,
+                                                    from: _model.startDate,
+                                                    to: _model.endDate,
+                                                  ),
+                                                ),
                                                 Container(
                                                   width:
                                                       MediaQuery.sizeOf(context)
